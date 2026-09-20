@@ -10,6 +10,10 @@ app.use(express.json());
 let todos = [];
 let nextId = 1;
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
 app.get('/api/todos', (req, res) => {
   res.json(todos);
 });
