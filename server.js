@@ -6,7 +6,7 @@ const PORT = 3000;
 
 app.use(cors(
   {
-    origin: 'http://amzn-demo-react-to-do-app.s3-website-us-east-1.amazonaws.com/',
+    origin: 'http://amzn-demo-react-to-do-app.s3-website-us-east-1.amazonaws.com',
     allowedHeaders: ['Content-Type', 'Authorization'],
   }
 ));
