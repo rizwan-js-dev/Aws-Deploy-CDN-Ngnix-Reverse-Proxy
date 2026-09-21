@@ -4,7 +4,12 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: 'http://amzn-demo-react-to-do-app.s3-website-us-east-1.amazonaws.com/',
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  }
+));
 app.use(express.json());
 
 let todos = [];
